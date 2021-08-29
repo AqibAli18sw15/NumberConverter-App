@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/fragement1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment1"
+    android:background="@color/transparent"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/basiccontents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backfield"
+            android:gravity="center"
+            android:hint="Insert Number"
+            android:inputType="number"
+
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#9E9898"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/insert"
+            android:layout_marginTop="20dp"
+            android:background="@color/transparent"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/spinerone"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backfield"
+                android:gravity="center"
+                android:textColor="@color/darkblack"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to"
+                android:textSize="15sp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"/>
+            <Spinner
+                android:id="@+id/spinertwo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/backfield"
+                android:gravity="center"
+                android:textColor="@color/darkblack"
+                />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:id="@+id/convert"
+            android:textSize="35sp"
+            android:layout_below="@+id/linear"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backfield"
+            android:textColor="@color/darkblack"
+            />
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/convert"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/darkblack"
+            />
+
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:text="Explanation"
+        android:background="@drawable/backfield"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/darkblack"
+        />
+
+</FrameLayout>
